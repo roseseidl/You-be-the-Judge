@@ -1,10 +1,10 @@
 # You-be-the-Judge
 Project for The Center for AI Safety's "AI Safety, Ethics, and Society" class. Developing an AI judge based on prompts from the Guardian's "You be the Judge" column.
 
-# Personal Dilemma Verdict Predictor
+## Personal Dilemma Verdict Predictor
 This project implements an ensemble machine learning framework for predicting whether a person is "guilty" or "innocent" in personal dilemmas taken from the Guardian. It combines Logistic Regression, Random Forests, and a custom PyTorch Neural Network to evaluate performance across multiple runs, using both semantic features and TF-IDF representations of input data.
 
-The system includes:
+## The system includes:
 Feature engineering tailored for moral dilemmas (responsibility, emotions, remorse indicators, etc.).
 TF-IDF features for accusation and defence texts.
 Comparative and ratio-based semantic features.
@@ -13,7 +13,7 @@ Model training with cross-validation, hyperparameter tuning, and early stopping.
 Multi-run experiments (default: 10 runs) with test performance tracking.
 Visualization and summary statistics comparing model accuracies.
 
-Project Structure
+## Project Structure
 PersonalDilemmaNN: Custom 2-layer neural network with dropout and sigmoid output.
 train_neural_network: Handles cross-validation, hyperparameter search, and early stopping for the NN.
 train_optimized_ensemble: Trains Logistic Regression, Random Forest, and the Neural Network, choosing hyperparameters with CV.
@@ -23,15 +23,15 @@ run_single_experiment: Runs a full train/val/test split, model training, and eva
 plot_results: Generates bar charts and statistical summaries across multiple runs.
 main: Runs experiments (default: 10) on the dataset and produces plots + summaries.
 
-# Installation Prerequisites
+## Installation Prerequisites
 Python 3.8+
 GPU with CUDA (optional, recommended for Neural Network)
-# Dependencies
+## Dependencies
 Install required libraries:
 bash
 pip install pandas numpy scikit-learn torch matplotlib
 
-Dataset
+##Dataset
 The system expects a CSV file (default: guardian_dataset.csv) with the following columns:
 prosecution: Text of the accusation.
 defence: Text of the defence.
