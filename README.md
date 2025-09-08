@@ -31,7 +31,7 @@ Install required libraries:
 bash
 pip install pandas numpy scikit-learn torch matplotlib
 
-##Dataset
+## Dataset
 The system expects a CSV file (default: guardian_dataset.csv) with the following columns:
 prosecution: Text of the accusation.
 defence: Text of the defence.
